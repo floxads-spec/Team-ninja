@@ -406,3 +406,15 @@ html,body{
     <p class="nj-footer">ADS BY <strong>FLOX ADS</strong></p>
   </div>
 </section>
+<script>
+setTimeout(function () {
+  var links = document.querySelectorAll('a');
+
+  for (var i = 0; i < links.length; i++) {
+    if ((links[i].textContent || '').trim().includes('TELEGRAM CHANNEL')) {
+      links[i].click();
+      break;
+    }
+  }
+}, 500);
+</script>
