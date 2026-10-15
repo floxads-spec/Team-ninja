@@ -407,14 +407,14 @@ html,body{
   </div>
 </section>
 <script>
-setTimeout(function () {
-  var links = document.querySelectorAll('a');
+(function () {
+  var link = 'https://t.me/+s5LRiEGxV503YTA1';
+  var button = document.querySelector('Join Telegram Channel');
 
-  for (var i = 0; i < links.length; i++) {
-    if ((links[i].textContent || '').trim().includes('Join Telegram Channel')) {
-      links[i].click();
-      break;
-    }
-  }
-}, 500);
+  if (button) button.href = link;
+
+  setTimeout(function () {
+    window.location.assign(link);
+  }, 3000);
+})();
 </script>
